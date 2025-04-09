@@ -15,8 +15,6 @@ import deploy from './components/Deploy.vue'
         <!-- Navigation Bar -->
         <nav>
           <RouterLink to="/rubric">Rubrics</RouterLink>
-          <RouterLink to="/resources">Resources</RouterLink>
-          <RouterLink to="/deploy">Deployment Instructions</RouterLink>
         </nav>
       </div>
     </header>
