@@ -7,7 +7,7 @@ This document provides step-by-step instructions to deploy a Vue app, built with
 ## Prerequisites
 
 - **GitHub Account**: You need a GitHub account and a repository to store your code.
-- **Vite**: Ensure your project is set up with Vite using `npm create vue@latest`.
+- **Vite**: Ensure your project is setup with Vite using `npm create vue@latest`.
 - **gh-pages Package**: To automate deployment, install the `gh-pages` package.
 
 ---
