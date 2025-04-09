@@ -1,7 +1,5 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import Rubric from './components/Rubrics.vue'
-import Resources from './components/Resources.vue'
 import deploy from './components/Deploy.vue'
 </script>
 
