@@ -1,6 +1,7 @@
 # vue-project
 
-This template should help get you started developing with Vue 3 in Vite.
+- This is a demonstration of a simple Vue 3 App.
+- [DEPLOY_INSTRUCTIONS.md](DEPLOY_INSTRUCTIONS.md) provides instructions to deploy the App on GitHub Pages.
 
 ## Recommended IDE Setup
 

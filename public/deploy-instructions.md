@@ -1,16 +1,12 @@
-# Deployment Instructions for Vue App Using Vite on GitHub Pages
+# Vue App Deployment Instructions on GitHub Pages
 
 This document provides step-by-step instructions to deploy a Vue app, built with Vite, on GitHub Pages.
-
----
 
 ## Prerequisites
 
 - **GitHub Account**: You need a GitHub account and a repository to store your code.
 - **Vite**: Ensure your project is set up with Vite using `npm create vue@latest`.
 - **gh-pages Package**: To automate deployment, install the `gh-pages` package.
-
----
 
 ## Steps for Deployment
 
@@ -23,6 +19,7 @@ npm install gh-pages --save-dev
 ```
 
 ### 2. Update vite.config.js
+
 Open or create the vite.config.js file in your project root, and configure it as follows. Replace vue-example with the name of your GitHub repository.
 
 ```javascript
@@ -48,6 +45,7 @@ export default defineConfig({
 ```
 
 ### 3. Add Deployment Scripts to package.json
+
 Open package.json and add the following lines under "scripts":
 
 ```json
@@ -58,6 +56,7 @@ Open package.json and add the following lines under "scripts":
 ```
 
 ### 4. Push Your Code to GitHub
+
 Ensure all changes are committed, and push your code to GitHub:
 
 ```bash
@@ -67,20 +66,21 @@ git push origin main
 ```
 
 ### 5. Deploy the App
-Run the following commands to build and deploy your app:
+
+The following commands build and deploy your app: the build command will create a dist folder, and the deploy command will push its contents to the gh-pages branch, and publish the App on GitHub Pages.
 
 ```bash
 npm run build
 npm run deploy
-This will create a dist folder, push its contents to the gh-pages branch, and publish your site on GitHub Pages.
 ```
 
 ### 6. Configure GitHub Pages
-Go to your GitHub repository.
-Navigate to Settings > Pages.
-In the Source section, select the gh-pages branch.
-Save the settings. GitHub Pages will now serve your site from the gh-pages branch.
 
+- Go to your GitHub repository.
+- Navigate to Settings > Pages.
+- In the Source section, select the gh-pages branch.
+- Save the settings. GitHub Pages will now serve your site from the gh-pages branch.
 
 ### 7. Access Your Deployed App
-Your Vue app will be available at https://<username>.github.io/<repository-name>/.
+
+Your Vue app will be available at `https://<username>.github.io/<repository-name>/`.
