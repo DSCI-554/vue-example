@@ -1,6 +1,5 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import deploy from './components/Deploy.vue'
+import deploy from './views/HowToDeploy.vue'
 </script>
 
 <template>
@@ -8,10 +7,11 @@ import deploy from './components/Deploy.vue'
     <header>
       <div class="wrapper">
         <!-- Title or Logo -->
-        <HelloWorld msg="DSCI 554 Final Project" />
+        <h1>Sample Vue App</h1>
 
         <!-- Navigation Bar -->
         <nav>
+          <RouterLink to="/home">Home</RouterLink>
           <RouterLink to="/deploy">Deployment Instructions</RouterLink>
         </nav>
       </div>

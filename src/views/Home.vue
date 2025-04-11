@@ -1,3 +1,16 @@
+<template>
+  <div class="container">
+    <header>
+      <h1>Home</h1>
+    </header>
+    <div class="wrapper">
+      <div class="subpage">
+        This is a sample vue application with instructions to deploy on GitHub Pages.
+      </div>
+    </div>
+  </div>
+</template>
+
 <script setup>
 import { ref, onMounted } from 'vue'
 import MarkdownIt from 'markdown-it'
@@ -6,7 +19,7 @@ import MarkdownIt from 'markdown-it'
 const markdown = new MarkdownIt();
 
 // Define a ref to hold the fetched markdown content
-const source = ref("# DSCI 554 Final Project"); // Initial default value
+const source = ref("Deploy Instructions"); // Initial default value
 
 // Fetch the markdown file content on component mount
 onMounted(async () => {
@@ -22,14 +35,6 @@ onMounted(async () => {
   }
 });
 </script>
-
-<template>
-  <div>
-    <!-- Render the converted HTML content -->
-    <div v-html="markdown.render(source)" />
-    <br />
-  </div>
-</template>
 
 <style scoped>
 /* Style the rendered markdown content */
