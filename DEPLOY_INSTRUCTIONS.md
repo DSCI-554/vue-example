@@ -1,6 +1,6 @@
-# Vue App Deployment Instructions on GitHub Pages
+# Instructions to Deployment on GitHub Pages
 
-This document provides step-by-step instructions to deploy a Vue app, built with Vite, on GitHub Pages.
+This document provides step-by-step instructions to deploy a Vue App, built with Vite, on GitHub Pages.
 
 ## Prerequisites
 
